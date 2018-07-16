@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+ {
+  box-sizing: border-box;
+}
+* {box-sizing:border-box}
+
+/*/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+*/
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: right;
+  width: 10%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header {
+    padding: 10px;
+    font-size: 40px;
+    text-align: left;
+    background: white;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {   
+    float: left;
+    width: 100%;
+}
+
+.sidebar {
+    float: right;
+    width: 50%;
+    background-color: #f1f1f1;
+    padding-left: 10px;
+    
+}
+.sidebarmid {
+    float: right;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding-left: 10px;
+    align-content: left;
+    
+}
+.sidebarkiri {
+    float: left;
+    width: 50%;
+    background-color: #f1f1f1;
+    padding-left: 10px;
+}
+
+.img {
+    background-color: #aaa;
+    width: 100%;
+    padding: 10px;
+}
+
+.card {
+     background-color: white;
+     padding: 10px;
+     margin-top: 10px;
+}
+.widget{
+     background-color: white;
+     padding: 10px;
+     margin-top: 10px;   
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    background: white;
+    margin-top: 20px;
+    display: inline-block;
+    float: left;    
+}
+body {
+    background: rgb(191, 76, 76);
+}
+
+
+
+#wrapper
+{
+ text-align:center;
+ margin:0 auto;
+ padding:0px;
+ width:995px;
+}
+#image_div
+{
+ width:500px;
+ margin-left:245px;
+ position:relative;
+}
+#image_div img
+{
+ width:100%;
+}
+#image_div #image_label
+{
+ margin:0px;
+ position:absolute;
+ bottom:7px;
+}
+#image_div #image_label span
+{
+ background-color: #0B4C5F;
+ opacity:0.8;
+ font-size:25px;
+ padding:7px;
+ box-sizing:border-box;
+ color:white;
+ font-weight:bold;
+}
+
+
+@media (max-width: 800px) {
+    .content, .sidebar,.footer{   
+        width: 100%;
+        padding: 0;
+    }     
+}
+
+@media (max-width: 1000px) {
+    .nav a {
+        float: none;
+        width:100%;
+    }
+}
